@@ -1,0 +1,43 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: arial;
+}
+:root {
+  --color: #0093e9;
+  --bg-color-form: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+}
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  text-align: center;
+  color: var(--color);
+}
+.formulario {
+  height: 40vh;
+  background: var(--bg-color-form);
+  border-radius: 30px;
+}
+
+label,
+input {
+  /* display: flex; */
+  text-align: center;
+  margin: 10px;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.inputs {
+  padding-top: 50px;
+}
+
+.btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
