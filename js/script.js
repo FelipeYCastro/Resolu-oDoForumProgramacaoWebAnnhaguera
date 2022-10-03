@@ -4,7 +4,7 @@ let nomeCompleto = document.querySelector("#nomeCompleto");
 
 let dataNascimento = document.querySelector("#dataNascimento"); //
 
-let enviar = document.querySelector("#enviar");
+let inserirTexto = document.querySelector(".inserirSigno");
 
 let capricornio = "Capricórnio";
 let aquario = "Aquário";
@@ -53,6 +53,10 @@ formulario.addEventListener("submit", function (e) {
   e.preventDefault();
   dia = Number(dataNascimento.value.slice(-2));
   mes = Number(dataNascimento.value.slice(5, 7));
-  console.log(`Seu nascimento foi ${dia}/${mes};`);
+  // let resultado = n
+  console.log(
+    `Olá ${nomeCompleto.value}, seu nascimento foi ${dia}/${mes}, portante seu Signo é `
+  );
   descobrirSigno(dia, mes);
+  // inserirTexto.insertAdjacentHTML("beforrend", "<p> teste </p>");
 });
