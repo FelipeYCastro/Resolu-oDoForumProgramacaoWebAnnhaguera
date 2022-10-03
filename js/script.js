@@ -18,45 +18,67 @@ let virgem = "Virgem";
 let libra = "Libra";
 let escorpiao = "Escorpião";
 let sagitario = "Sagitário";
-let dia, mes;
+let dia, mes, resultad;
 
 function descobrirSigno(dia, mes) {
   if ((dia <= 19 && mes === 1) || (dia >= 22 && mes === 12)) {
-    console.log(`Seu Signo é ${capricornio}.`);
+    alert(
+      `Seu Signo é ${capricornio}, clique no link abaixo para descobrir seu Horóscopo.`
+    );
   } else if ((dia >= 20 && mes === 1) || (dia <= 18 && mes === 2)) {
-    console.log(`Seu Signo é ${aquario}.`);
+    alert(
+      `Seu Signo é ${aquario}, clique no link abaixo para descobrir seu Horóscopo.`
+    );
   } else if ((dia >= 19 && mes === 2) || (dia <= 20 && mes === 3)) {
-    console.log(`Seu Signo é ${peixe}.`);
+    alert(
+      `Seu Signo é ${peixe}, clique no link abaixo para descobrir seu Horóscopo.`
+    );
   } else if ((dia >= 21 && mes === 3) || (dia <= 19 && mes === 4)) {
-    console.log(`Seu Signo é ${aries}.`);
+    alert(
+      `Seu Signo é ${aries}, clique no link abaixo para descobrir seu Horóscopo.`
+    );
   } else if ((dia >= 20 && mes === 4) || (dia <= 20 && mes === 5)) {
-    console.log(`Seu Signo é ${touro}.`);
+    alert(
+      `Seu Signo é ${touro}, clique no link abaixo para descobrir seu Horóscopo.`
+    );
   } else if ((dia >= 21 && mes === 5) || (dia <= 21 && mes === 6)) {
-    console.log(`Seu Signo é ${gemeos}.`);
+    alert(
+      `Seu Signo é ${gemeos}, clique no link abaixo para descobrir seu Horóscopo.`
+    );
   } else if ((dia >= 22 && mes === 6) || (dia <= 22 && mes === 7)) {
-    console.log(`Seu Signo é ${cancer}.`);
+    alert(
+      `Seu Signo é ${cancer}, clique no link abaixo para descobrir seu Horóscopo.`
+    );
   } else if ((dia >= 23 && mes === 7) || (dia <= 22 && mes === 8)) {
-    console.log(`Seu Signo é ${leao}.`);
+    alert(
+      `Seu Signo é ${leao}, clique no link abaixo para descobrir seu Horóscopo.`
+    );
   } else if ((dia >= 23 && mes === 8) || (dia <= 22 && mes === 9)) {
-    console.log(`Seu Signo é ${virgem}.`);
+    alert(
+      `Seu Signo é ${virgem}, clique no link abaixo para descobrir seu Horóscopo.`
+    );
   } else if ((dia >= 23 && mes === 9) || (dia <= 22 && mes === 10)) {
-    console.log(`Seu Signo é ${libra}.`);
+    alert(
+      `Seu Signo é ${libra}, clique no link abaixo para descobrir seu Horóscopo.`
+    );
   } else if ((dia >= 23 && mes === 10) || (dia <= 21 && mes === 11)) {
-    console.log(`Seu Signo é ${escorpiao}.`);
+    alert(
+      `Seu Signo é ${escorpiao}, clique no link abaixo para descobrir seu Horóscopo.`
+    );
   } else if ((dia >= 22 && mes === 11) || (dia <= 21 && mes === 12)) {
-    console.log(`Seu Signo é ${sagitario}.`);
+    alert(
+      `Seu Signo é ${sagitario}, clique no link abaixo para descobrir seu Horóscopo.`
+    );
   }
 }
-// descobrirSigno();
 
 formulario.addEventListener("submit", function (e) {
   e.preventDefault();
+  let resultado;
   dia = Number(dataNascimento.value.slice(-2));
   mes = Number(dataNascimento.value.slice(5, 7));
-  // let resultado = n
-  console.log(
-    `Olá ${nomeCompleto.value}, seu nascimento foi ${dia}/${mes}, portante seu Signo é `
-  );
+  // console.log(
+  //   `Olá ${nomeCompleto.value}, seu nascimento foi ${dia}/${mes}, portante seu Signo é `
+  // );
   descobrirSigno(dia, mes);
-  // inserirTexto.insertAdjacentHTML("beforrend", "<p> teste </p>");
 });
